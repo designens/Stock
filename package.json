@@ -1,0 +1,42 @@
+{
+  "name": "Kakao_Stock_Project",
+  "version": "0.0.1",
+  "description": "카카오증권",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.8.11"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.7.13",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-csso": "^1.0.0",
+    "gulp-filter": "^2.0.2",
+    "gulp-html-ssi": "^0.0.92",
+    "gulp-iconfont": "^3.0.2",
+    "gulp-iconfont-css": "0.0.9",
+    "gulp-iconic": "^3.0.0",
+    "gulp-if": "^1.2.5",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^2.0.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-shell": "^0.4.2",
+    "gulp-sourcemaps": "^2.1.1",
+    "gulp-uglify": "^1.2.0",
+    "imagemin-pngquant": "^4.1.0",
+    "sprity": "^1.0.8",
+    "sprity-sass": "^1.0.4",
+    "susy": "^2.2.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.dev.dunamu.com/publishing/stock"
+  },
+  "keywords": [
+    "ssi",
+    "sass"
+  ],
+  "author": "Cristina_jiy",
+  "license": "ISC"
+}
