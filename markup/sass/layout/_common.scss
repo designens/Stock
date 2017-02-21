@@ -1,0 +1,122 @@
+// =======================================
+// Common Style
+// =======================================
+
+textarea, input, select {
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	-webkit-border-radius: 0;
+	-ms-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius:0;
+	border: 0;
+	outline-color: -moz-use-text-color;
+	outline-style: none;
+	outline-width: medium;
+}
+
+// Clearfix
+.clearfix::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+// ICON 스타일 정의
+@mixin icon-arrow($class: null, $top: null, $bottom: null, $left: null, $right: null, $color: null, $fz: null, $content: null) {
+	color: $color;
+	&:#{$class} {
+		position: relative;
+		display: inline-block;
+		top: $top + 1;
+		right: $right;
+		bottom: $bottom;
+		left: $left;
+		color: $color;
+		font-family: FontAwesome;
+		@include psd-fz($fz*1.5);
+		content: $content;
+		@include susy-breakpoint($mobile) {
+			top: $top;
+			@include psd-fz($fz);
+		}
+	}
+}
+
+// ICON 스타일 적용
+.fa-up-before {
+	@include icon-arrow($class: before, $top: 0px, $right: 8px, $color: #e22618, $fz: 14px, $content: "\f04b");
+	&:before {
+		-ms-transform: rotate(30deg); // IE 9
+		-webkit-transform: rotate(30deg); // Safari
+		transform: rotate(30deg);
+	}
+}
+.fa-up-after {
+	@include icon-arrow($class: after , $top: 0px, $left: 8px, $color: #e22618, $fz: 14px, $content: "\f04b");
+	&:after {
+		-ms-transform: rotate(30deg); // IE 9
+		-webkit-transform: rotate(30deg); // Safari
+		transform: rotate(30deg);
+	}
+}
+
+.fa-down-before {
+	@include icon-arrow($class: before, $top: -4px, $right: 8px, $color: #147aec, $fz: 14px, $content: "\f04b");
+	&:before {
+		-ms-transform: rotate(-30deg); // IE 9
+		-webkit-transform: rotate(-30deg); // Safari
+		transform: rotate(-30deg);
+	}
+}
+.fa-down-after {
+	@include icon-arrow($class: after, $top: -4px, $left: 8px, $color: #147aec, $fz: 14px, $content: "\f04b");
+	&:after {
+		-ms-transform: rotate(-30deg); // IE 9
+		-webkit-transform: rotate(-30deg); // Safari
+		transform: rotate(-30deg);
+	}
+}
+
+.fa-draw-before {
+	@include icon-arrow($class: before, $top: -1px, $right: 8px, $color: #777, $fz: 22px, $content: "\f068");
+	color: #222;
+}
+.fa-draw-after {
+	@include icon-arrow($class: after, $top: -1px, $left: 8px, $color: #777, $fz: 22px, $content: "\f068");
+	color: #222;
+}
+
+// Select Box 기본 스타일
+.select-wrap {
+	position: relative;
+	display: inline-block;
+	background-color: #fff;
+	&:after {
+		position: absolute;
+		top: 0;
+		right: 10px;
+		display: inline-block;
+		font-family: FontAwesome;
+		@include  psd-fz(14px*1.5);
+		color: #666;
+		content: "\f04b";
+		-ms-transform: rotate(-30deg); // IE 9
+		-webkit-transform: rotate(-30deg); // Safari
+		transform: rotate(-30deg);
+		z-index: 9;
+		@include susy-breakpoint($mobile) {
+			top: 2px;
+			@include psd-fz(14px);
+		}
+	}
+	select {
+		position: relative;
+		padding-right: 20px;
+		background-color: transparent;
+		cursor: pointer;
+		z-index: 10;
+	}
+}

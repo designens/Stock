@@ -1,0 +1,293 @@
+.event_160411 {
+	.head {
+		position: relative;
+		width: 100%;
+		background-color: #d45a54;
+		.head_content {
+			position: relative;
+			width: 360px;
+			height: 444px;
+			margin-left: -180px;
+			left: 50%;
+			background-image: url($openevent_img1);
+			background-size: 282px 175px;
+			background-repeat: no-repeat;
+			background-position: 65px 202px;
+			.title {
+				text-align: center;
+				height: 130px;
+				background-image: url($openevent_text1);
+				background-size: 339px 76px;
+				background-repeat: no-repeat;
+				background-position: center 36px;
+				h1 {
+					display: none;
+				}
+				.desc {
+					display: none;
+				}
+			}
+			.description {
+				p {
+					text-align: center;
+					font-size: 17px;
+					line-height: 24px;
+					color: #222222;
+				}
+				p:last-child {
+					padding-top: 5px;
+				}
+			}
+		}
+		.btn_attend {
+			position: absolute;
+			width: 100%;
+			bottom: 0px;
+			background-color: #ba4d48;
+			text-align: center;
+			padding-top: 13px;
+			padding-bottom: 11px;
+			button {
+				width: 166px;
+				height: 44px;
+				border-radius: 40px;
+				border: 0px;
+				color: #ffffff;
+				border: 1px solid #ffffff;
+				background-color: transparent;
+				font-size: 18px;
+			}
+		}
+		.bg_img1 {
+			position: relative;
+			width: 282px;
+			height: 241px;
+			left: 50%;
+			margin-left: -115px;
+			margin-top: -90px;
+			padding-bottom: 23px;
+		}
+		.txt_ref {
+			text-align: center;
+			font-size: 13px;
+			color: #733331;
+			padding-top: 6px;
+		}
+	}
+	.body {
+		padding-top: 30px;
+		.title {
+			height: 57px;
+			color: #d13a33;
+			text-align: center;
+			background-image: url($openevent_text2);
+			background-size: 270px 57px;
+			background-repeat: no-repeat;
+			background-position: center 0px;
+			span {
+				display: none;
+			}
+		}
+		ol li {
+			position: relative;
+			width: 100%;
+			height: 239px;
+			padding-top: 45px;
+			text-align: center;
+		}
+		.tip01 {
+			background-image: url($openevent_img2);
+			background-size: 232px 198px;
+			background-position: center bottom;
+			background-repeat: no-repeat;
+			border-bottom: 1px solid #c1c1c1;
+		}
+		.tip02 {
+			background-image: url($openevent_img3);
+			background-size: 232px 198px;
+			background-position: center bottom;
+			background-repeat: no-repeat;
+			border-bottom: 1px solid #c1c1c1;
+		}
+		.tip03 {
+			background-image: url($openevent_img4);
+			background-size: 293px 198px;
+			background-position: center bottom;
+			background-repeat: no-repeat;
+			border-bottom: 1px solid #c1c1c1;
+		}
+		.down_and_event_poll {
+			text-align: center;
+			position: relative;
+			padding: 22px 0 29px 0;
+			button {
+				position: relative;
+				width: 316px;
+				height: 97px;
+				font-size: 17px;
+				padding: 38px 0 0 70px;
+				color: #ffffff;
+				border: 0px;
+				background-image: url($openevent_btn1);
+				background-size: 316px 97px;
+				background-position: center bottom;
+				background-repeat: no-repeat;
+				background-color: #ffffff;
+			}
+		}
+	}
+	.footer {
+		background-color: #f5f5f5;
+		.please_read {
+			position: relative;
+			width: 360px;
+			margin-left: -180px;
+			left: 50%;
+			padding: 36px 0 33px 0;
+			border-bottom: 1px solid #ffffff;
+			h2 {
+				font-size: 18px;
+				padding-bottom: 16px;
+				font-weight: normal;
+				text-align: center;
+				color: #2f2f2f;
+			}
+			ul {
+				padding-left: 15px;
+			}
+			li {
+				width: 90%;
+				color: #888888;
+				margin-left: 20px;
+				font-size: 15px;
+				line-height: 23px;
+				list-style-type: square;
+			}
+		}
+		.stock_chance {
+			position: relative;
+			text-align: center;
+			width: 360px;
+			height: 200px;
+			margin-left: -187px;
+			left: 50%;
+			padding: 33px 0 0px 0;
+			h2 {
+				font-weight: normal;
+				font-size: 16px;
+				padding-bottom: 22px;
+			}
+			ul {
+				padding-left: 40px;
+			}
+			li {
+				float: left;
+				width: 65px;
+				height: 65px;
+				padding-right: 10px;
+				a {
+					display: block;
+					width: 100%;
+					height: 100%;
+					text-indent: 100%;
+					white-space: nowrap;
+					overflow: hidden;
+				}
+			}
+			.kakao {
+				background-image: url($sns_kakaotalk);
+				background-size: 65px 65px;
+				background-repeat: no-repeat;
+			}
+			.story {
+				background-image: url($sns_kakaostory);
+				background-size: 65px 65px;
+				background-repeat: no-repeat;
+			}
+			.facebook {
+				background-image: url($sns_facebook);
+				background-size: 65px 65px;
+				background-repeat: no-repeat;
+			}
+			.twitter {
+				background-image: url($sns_twitter);
+				background-size: 65px 65px;
+				background-repeat: no-repeat;
+			}
+		}
+	}
+}
+
+@media all and (max-width:320px) {
+	.event_160411 {
+		.head {
+			.head_content {
+				width: 320px;
+				height: 396px;
+				margin-left: -160px;
+				background-size: 240px 149px;
+				background-position: 60px 178px;
+				.title {
+					height: 110px;
+					background-size: 290px 65px;
+					background-position: center 33px;
+				}
+				.description p {
+					font-size: 16px;
+				}
+			}
+			.txt_ref {
+				font-size: 10px;
+			}
+		}
+		.body {
+			padding-top: 30px;
+			ol li {
+				font-size: 15px;
+				letter-spacing: -1px;
+				height: 200px;
+			}
+			.tip01,
+			.tip02 {
+				padding-top: 38px;
+				background-size: 197px 168px;
+			}
+			.tip03 {
+				background-size: 250px 168px;
+			}
+			.down_and_event_poll {
+				button {
+					width: 256px;
+					height: 77px;
+					font-size: 15px;
+					padding: 32px 0 0 70px;
+					background-size: 256px 77px;
+				}
+			}
+		}
+		.footer {
+			.please_read {
+				width: 320px;
+				margin-left: -160px;
+				h2 {
+					font-size: 18px;
+				}
+				ul {
+					padding-left: 15px;
+				}
+			}
+			.stock_chance {
+				width: 320px;
+				left: 0px;
+				margin-left: 0px;
+				ul {
+					padding-left: 15px;
+				}
+				li {
+					margin-left: 0px;
+					background-size: 40px 40px;
+				}
+			}
+		}
+	}
+}

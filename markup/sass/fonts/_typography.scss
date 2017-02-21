@@ -1,0 +1,53 @@
+// =======================================
+// Typography
+// =======================================
+
+// 언어(Language) 설정
+html {
+	font-size: $html-fz;
+	body {
+		min-width: 320px;
+		font-family: $font-family;
+		@include psd-fz($body-fz);
+		@include psd-lh($body-fz);
+		color: $font-base;
+		background: $bg-body;
+		&.rest {
+			font-family: $font-family;
+		}
+		&.safari {
+			font-family: Helvetica;
+		}
+	}
+}
+
+// Heading Retina Design Font Size 설정
+$h1-fz: 60px;
+$h2-fz: 56px;
+$h3-fz: 48px;
+$h4-fz: 40px;
+$h5-fz: 34px;
+$h6-fz: 32px;
+
+// 제목 폰트 사이즈, 행간 비율 (px, rem)
+h1.h1, h2.h2, h3.h3, h4.h4, h5.h5, h6.h6 {
+	@include mb-size($body-fz, bottom);
+}
+h1.h1 {
+	@include hd-font($h1-fz, 2);
+}
+h2.h2 {
+	@include hd-font($h2-fz, 2);
+}
+h3.h3 {
+	@include hd-font($h3-fz, 2);
+}
+h4.h4 {
+	@include hd-font($h4-fz, 1);
+}
+h5.h5 {
+	@include hd-font($h5-fz, 1);
+}
+h6.h6 {
+	@include hd-font($h6-fz, 1);
+}

@@ -1,0 +1,246 @@
+@import 'common';
+
+// 아이콘
+.ico-inverted-triangle {
+	background: #ffffff;
+	width: 20px;
+	height: 25px;
+	text-align: center;
+
+	&:after {
+		display: inline-block;
+		content: "";
+		width: 14px;
+		height: 9px;
+		background: url($ico_set01) -135px -301px no-repeat;
+		overflow: hidden;
+		vertical-align: middle;
+		background-size: 200px;
+	}
+}
+// 홈
+.indexGraph {
+	.paginate {
+		@include paginate-mixin();
+		font-size: 0px;
+		position: absolute;
+		width: 100%;
+		left: 0px;
+		margin-top: -27px;
+	}
+}
+// 프로필
+.cb-profile {
+	.birth {
+		position: relative;
+
+		select {
+			-webkit-appearance: none;
+			background-color: #ffffff;
+		}
+		.ico-inverted-triangle {
+			position: absolute;
+			top: 20px;
+			right: 3px;
+		}
+	}
+	.fav-stock {
+		a {
+			width: 50px !important;
+			margin-right: 20px !important;
+		}
+	}
+}
+// 주문하기 영역
+.order-area {
+	.order {
+		height: 46px;
+		margin: 0 15px 0 15px;
+		border-top: 1px solid #eeeeee;
+
+		.order-inner {
+			padding-top: 8.5px;
+
+			h2 {
+				display: inline-block;
+				float: left;
+				padding: 0px;
+				margin: 0px;
+				font-size: 16px;
+				line-height: 30px;
+				letter-spacing: -0.5px;
+			}
+			button {
+				padding: 3px 0 0 0;
+				margin: 1px 0 0 0;
+				float: right;
+				border: 1px solid #222222;
+				background-color: #ffffff;
+				border-radius: 20px;
+				font-size: 16px;
+				width: 50px;
+				height: 27px;
+				// 170111_PUB-21 이슈
+				&.btn-order {
+					border: 1px solid #e52300 !important;
+					color: #e52300;
+				}
+			}
+		}
+	}
+	.order_layer {
+		.order_layer_inner {
+			position: fixed;
+			z-index: 100;
+			top: 70px;
+			left: 50%;
+			margin-left: -141px;
+			width: 282px;
+			background-color: #ffffff;
+
+			.head {
+				position: relative;
+				height: 33.5px;
+				letter-spacing: -1px;
+				color: #222222;
+				font-size: 18px;
+				text-align: center;
+				padding: 18px 0 0 0;
+				margin: 0px;
+
+				.close {
+					position: absolute;
+					width: 16.5px;
+					height: 16.5px;
+					right: 11px;
+					text-indent: -1000px;
+					top: 7.5px;
+					right: 7.5px;
+					background: url($ico_set01) -140px -30px no-repeat;
+					background-size: 200px;
+				}
+			}
+			.body {
+				position: relative;
+				border-radius: 3px;
+				background-color: #ffffff;
+				padding: 0px 9px 14px 9px;
+
+				p {
+					padding-bottom: 15px;
+					font-size: 15px;
+					line-height: 20px;
+					letter-spacing: -0.9px;
+					text-align: center;
+					color: #999999;
+				}
+				.gray_box {
+					position: relative;
+					background-color: #efefef;
+					height: 195px;
+					margin: 0 6px 0 6px;
+
+					h3 {
+						padding: 16px 0 12px 0px;
+						font-size: 15px;
+						letter-spacing: -0.5px;
+						text-align: center;
+						color: #666666;
+					}
+					ul {
+						padding: 0px 0 10px 10px;
+					}
+					li {
+						float: left;
+						width: 115px;
+						padding: 0px 0 0px 5px;
+						font-size: 13px;
+						line-height: 28px;
+						letter-spacing: -0.5px;
+						color: #222222;
+					}
+				}
+				.desc {
+					position: relative;
+					text-align: center;
+					padding-top: 14px;
+					font-size: 12px;
+					letter-spacing: -0.5px;
+					color: #999999;
+				}
+			}
+			// 카카오증권 앱 설치
+			button.install {
+				width: 100%;
+				height: 50px;
+				border: 1px solid #f7f7f7;
+				border-top: 1px solid #dddddd;
+				background-color: #f7f7f7;
+
+				span {
+					font-weight: bold;
+					font-size: 19px;
+					letter-spacing: -0.5px;
+					font-weight: normal;
+					color: #222222;
+				}
+			}
+		}
+		.bg {
+			position: fixed;
+			z-index: 99;
+			top: 0px;
+			width: 100%;
+			height: 100%;
+			background-color: #000000;
+			opacity: 0.5;
+		}
+	}
+}
+// 증시동향
+.indexBox {
+	position: relative;
+	height: 336px;
+
+	li {
+		display: inline-block;
+		float: left;
+		width: 50%;
+		border-bottom: 1px solid #ededed;
+
+		// last, last-1 li 에 다른 색상의 줄긋기
+		&:nth-last-child(2), &:nth-last-child(1) {
+			border-bottom: 1px solid #e3e3e3;
+		}
+		// 홀수 라인 left 줄긋기
+		&:nth-child(even) dl {
+			border-left: 1px solid #ededed;
+		}
+	}
+	dl {
+		height: 111px;
+		text-align: center;
+
+		dt {
+			padding: 15px 0 0 0;
+			color: #000000;
+			font-size: 16px;
+		}
+		dd {
+			@include up-down-mixin();
+
+			strong {
+				display: block;
+				font-size: 27px;
+				color: #000000;
+				font-weight: normal;
+				font-family: Helvetica-Light, sans-serif-light;
+			}
+			&.txt {
+				color: #999999;
+				font-size: 10px;
+				margin: 4px 0 0 0;
+			}
+		}
+	}
+}

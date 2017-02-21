@@ -1,0 +1,353 @@
+// =======================================
+// Conmmon Header
+// =======================================
+header {
+	.new-topDef {
+		height: 31px;
+	}
+	nav {
+		ul {
+			li {
+				height: 45px;
+			}
+		}
+	}
+}
+
+// =======================================
+// 증시동향 > 홈 > 환율
+// =======================================
+.new-indexBox {
+	height: 192px !important;
+	dl {
+		height: 95px !important;
+		dd {
+			[class^="fa-"] {
+				font-size: 14px;
+			}
+		}
+	}
+}
+.new-info {
+	width: 100%;
+	@include psd-fz(24px);
+	@include psd-lh(60px);
+	color: #999;
+	overflow: hidden;
+	> span {
+		box-sizing: border-box;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		&:first-child {
+			float: left;
+			width: 30%;
+			padding-left: 15px;
+		}
+		&:last-child {
+			float: right;
+			width: 70%;
+			padding-right: 15px;
+			text-align: right;
+		}
+	}
+}
+.flag-wrap {
+	width: 100%;
+	margin-top: 8px;
+	background: #fff;
+	border-top: 1px solid #e3e3e3;
+}
+.flag-area {
+	padding: 1.3rem 1.5rem;
+	border-bottom: 1px solid #eee;
+	&:last-child {
+		border-bottom: 0;
+	}
+}
+.flag-select {
+	@include span(1);
+	padding: 5px 1rem 5px 0;
+	.select-wrap {
+		@include psd-fz(32px);
+		width: 100%;
+		select {
+			width: 100%;
+		}
+		&:after {
+			right: 0;
+		}
+	}
+	@each $flag, $bg in $icon_flags {
+		p.icon-flag-#{$flag} {
+			@include psd-fz(32px);
+			color: #999;
+			width: 100%;
+			margin-top: 2px;
+			padding-left: retina(60px);
+			background: url($bg) 0 3px no-repeat;
+			background-size: retina(47px) retina(30px);
+		}
+	}
+}
+.flag-currency {
+	@include span(3 last);
+	padding: retina(18px) retina(20px);
+	box-sizing: border-box;
+	background: #f4f4f4;
+	label {
+		position: absolute;
+		left: -9999px;
+		top: auto;
+		height: 0;
+		overflow: hidden;
+	}
+	input[id$="-currency"] {
+		width: 100%;
+		@include psd-fz(44px);
+		color: #000;
+		text-align: right;
+		line-height: 1.2;
+		background: #f4f4f4;
+		&.selected {
+			color: #cd372f;
+		}
+	}
+	.unit {
+		@include psd-fz(26px);
+		color: #999;
+		text-align: right;
+		line-height: 1.2;
+	}
+}
+
+.new-trendStockW {
+	.contW01, .flag-wrap {
+		border-bottom: 1px solid #e3e3e3;
+	}
+	nav {
+		ul {
+			li {
+				height: 51px;
+				border-bottom: 1px solid #e3e3e3;
+			}
+		}
+	}
+	.myStkB {
+		table {
+			border-top: 0;
+		}
+	}
+}
+
+.new-contW02 {
+	.myStkB {
+		tbody {
+			tr {
+				td {
+					line-height: 4rem;
+					vertical-align: bottom;
+					&:first-child {
+						padding-left: 1.5rem;
+					}
+					&:last-child {
+						padding-right: 1.5rem;
+					}
+					a {
+						height: 100%;
+						line-height: 4rem;
+					}
+					.draw {
+						padding-right: 9px;
+					}
+				}
+			}
+		}
+	}
+}
+@media (min-width: 360px) {
+	ul.searchResult {
+		li {
+			p.txt {
+				box-sizing: content-box;
+			}
+		}
+	}
+}
+
+// =======================================
+// 증시동향 > 홈 > 환율상세
+// =======================================
+.new-stockInfoB {
+	padding: 14px;
+	margin-bottom: 0;
+	border-bottom: 1px solid #e3e3e3;
+	ul {
+		li {
+			.stkN {
+				margin-bottom: 0;
+				strong {
+					display: inline-block;
+					* {
+						margin-right: retina(8px);
+						&:last-child {
+							margin-right: 0;
+						}
+					}
+					span.money {
+						@include psd-fz(64px);
+					}
+					i {
+						@include psd-fz(40px);
+						margin-left: 0;
+					}
+					span {
+						line-height: 1.2;
+					}
+				}
+				p {
+					@include psd-fz(32px);
+					color: #e62300;
+					margin-top: -6px;
+					em {
+						display: inline-block;
+						&.fa-up-before {
+							margin-left: retina(48px);
+							line-height: normal;
+						}
+					}
+				}
+			}
+			.stkM {
+				padding-top: 4px;
+				padding-bottom: 4px;
+				line-height: 1.5;
+			}
+		}
+	}
+	a[class^="btn"] {
+		top: 48px;
+	}
+}
+.new-cAlign {
+	.btn {
+		&:first-child {
+			margin-right: 5px;
+		}
+	}
+	a.btn.ty02 {
+		width: 50px;
+		line-height: 50px;
+	}
+}
+.new-ftHiLowB {
+	.bar {
+		span {
+			line-height: initial;
+		}
+	}
+	&.pt0 {
+		table {
+			colgroup {
+				col {
+					&:nth-of-child(1n) {
+						min-width: 20px;
+					}
+					&:nth-of-child(2n) {
+						width: auto;
+					}
+				}
+			}
+		}
+	}
+	table {
+		td {
+			line-height: 2.6;
+		}
+	}
+}
+.new-stockInfoW {
+	.chartB {
+		ul {
+			height: auto !important;
+			li {
+				a {
+					padding: 3px 0;
+					line-height: 1.7;
+					&.selected {
+						padding: 3px 0;
+					}
+				}
+			}
+		}
+	}
+}
+.new-marketPriceW {
+	.bt0 {
+		tbody {
+			tr {
+				td {
+					.draw {
+						padding-right: 9px;
+					}
+				}
+			}
+		}
+	}
+}
+@media all and (max-width:360px) {
+	.new-marketPriceW {
+		table {
+			td {
+				padding: 0 5px;
+			}
+		}
+	}
+}
+@media all and (max-width:360px) {
+	.new-ftHiLowB {
+		table {
+			th {
+				padding: 0 5px;
+			}
+			td {
+				padding: 0 5px;
+			}
+		}
+	}
+}
+
+// Modal windows
+.favGrpLayer .titB h4 {
+	box-sizing: content-box;
+}
+@media all and (min-width:360px) {
+	.favGrpLayer .titB h4 {
+		box-sizing: content-box;
+	}
+}
+.favGrpLayer .listB ul li {
+	width: 100%;
+}
+@media all and (min-width:360px) {
+	.favGrpLayer .listB ul li {
+		width: 100%;
+	}
+}
+.favGrpLayer .listB ul li.add input {
+	box-sizing: content-box;
+}
+
+@media all and (min-width:360px) {
+	.favGrpLayer .listB ul li.add input {
+		box-sizing: content-box;
+	}
+}
+
+@media all and (max-width:360px) {
+	.shareLayerW .shareList a {
+		font-size: 1.1rem;
+		letter-spacing: -0.05em;
+		background-size: 270px 250px;
+	}
+}

@@ -1,0 +1,500 @@
+<!--#include file="../_inc/_doctype.html"-->
+<head>
+    <!--#include file="../_inc/_page-title.html"-->
+    <!--#include file="../_inc/_meta-information.html"-->
+    <!--#include file="../_inc/_meta-settings.html"-->
+    <!--#include file="../_inc/_css-settings-before.html"-->
+</head>
+<body>
+    <header>
+        <div class="topDef">
+            <h1><a href="#" title="kakaostock">kakaostock</a></h1>
+            <span class="btnB">
+                <a href="#" class="btnMy" title="마이페이지">My</a>
+            </span>
+        </div>
+        <div class="mainSearch">
+            <em>
+                <input type="text" class="maintxt" placeholder="관심분야, 종목을 검색해보세요." />
+                <button class="btnSearch" title="검색">검색</button>
+            </em>
+        </div>
+        <nav>
+            <ul class="f_clear">
+                <li><a href="#" title="홈">홈</a></li>
+                <li class="long"><a href="#" class="selected" title="증시동향">증시동향</a></li>
+                <li><a href="#" title="랭킹">랭킹</a></li>
+                <li><a href="#" title="뉴스">뉴스</a></li>
+                <li class="long"><a href="#" title="투자정보">투자정보</a></li>
+            </ul>
+        </nav>
+        <ul class="subNB col2 f_clear">
+            <li><a href="#" class="selected" title="국내">국내</a></li>
+            <li><a href="#" title="해외">해외</a></li>
+        </ul>
+    </header>
+    <main>
+        <article class="trendStockW">
+            <div class="contW01 pb0">
+                <!-- 코스피, 코스닥 -->
+                <ul class="indexGraph">
+                    <li>
+                        <a href="#">
+                            <dl class="f_clear">
+                                <dt>코스피</dt>
+                                <dd>
+                                    <strong>1,987.99</strong>
+                                    <em class="up">15.85&nbsp; 0.78<i>%</i></em>
+                                </dd>
+                                <dd class="graph" style="background-color:#e2e2e2;"></dd>
+                                <dd class="txt">
+                                    <i class="first">외인</i> <span class="up">676</span>
+                                    <i>기관</i> <span class="down">-1,739</span>
+                                    <i>개인</i> <span class="down">-721</span>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <dl class="f_clear">
+                                <dt>코스닥</dt>
+                                <dd>
+                                    <strong>691.49</strong>
+                                    <em class="down">15.85&nbsp; 0.78<i>%</i></em>
+                                </dd>
+                                <dd class="graph" style="background-color:#e2e2e2;"></dd>
+                                <dd class="txt">
+                                    <i class="first">외인</i> <span class="up">265</span>
+                                    <i>기관</i> <span class="down">-236</span>
+                                    <i>개인</i> <span class="up">84</span>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="realTime">13:30 실시간</li>
+                </ul>
+            </div>
+
+            <div class="contW01 pb0">
+                <div class="txtW">
+                    <dl class="f_clear">
+                        <dt>시장에선 무슨 일이?<em>14.10.17 20:80</em></dt>
+                        <dd class="news">국제 유가 급등락에 변동성이 컸으나 헬스케어 업종 반등으로 상승 마감</dd>
+                    </dl>
+                </div>
+            </div>
+
+            <!-- 변동성 시작 -->
+            <div class="contW03">
+                <table class="type01">
+                    <colgroup>
+                        <col width="30%" />
+                        <col width="30%" />
+                        <col width="*" />
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td><strong>신고가</strong><em class="up">10</em></td>
+                            <td><strong>신저가</strong><em class="down">10</em></td>
+                            <td><strong>변동성완화</strong><em class="draw">10</em></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 변동성 끝 -->
+
+            <!-- 상승률 시작 -->
+            <nav>
+                <ul class="f_clear">
+                    <li><a href="#" class="selected">상승률</a></li>
+                    <li><a href="#">하락률</a></li>
+                </ul>
+            </nav>
+            <div class="contW02">
+                <div class="myStkB">
+                    <table class="bt0">
+                        <colgroup>
+                            <col width="30%" />
+                            <col width="20%" />
+                            <col width="30%" />
+                            <col width="20%" />
+                        </colgroup>
+                        <thead>
+                            <tr class="titW">
+                                <th colspan="2" class="lAlign">코스피</th>
+                                <th colspan="2" class="lAlign">코스닥</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="lAlign"><a href="#" class="stkName">현대차</a></td>
+                                <td><em class="down">-29.99%</em></td>
+                                <td class="lAlign"><a href="#" class="stkName">일이삼사오육칠팔구십</a></td>
+                                <td><em class="down">-2.99%</em></td>
+                            </tr>
+                            <tr>
+                                <td class="lAlign"><a href="#" class="stkName">12345678901234567890</a></td>
+                                <td><em class="up">+29.99%</em></td>
+                                <td class="lAlign"><a href="#" class="stkName">현대차</a></td>
+                                <td><em class="up">+9.19%</em></td>
+                            </tr>
+                            <tr>
+                                <td class="lAlign"><a href="#" class="stkName">현대차</a></td>
+                                <td><em class="draw">0.00%</em></td>
+                                <td class="lAlign"><a href="#" class="stkName">현대차</a></td>
+                                <td><em class="draw">0.00%</em></td>
+                            </tr>
+                            <tr>
+                                <td class="lAlign"><a href="#" class="stkName">현대차</a></td>
+                                <td><em class="down">-29.99%</em></td>
+                                <td class="lAlign"><a href="#" class="stkName">현대차</a></td>
+                                <td><em class="down">-29.99%</em></td>
+                            </tr>
+                            <tr>
+                                <td class="lAlign"><a href="#" class="stkName">현대차</a></td>
+                                <td><em class="down">-29.99%</em></td>
+                                <td class="lAlign"><a href="#" class="stkName">현대차</a></td>
+                                <td><em class="down">-29.99%</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="#" class="viewMore" title="더보기">더보기<em>&lt;</em></a>
+                </div>
+            </div>
+            <!-- 상승률 끝 -->
+
+            <!-- 외인 순매수 시작 -->
+            <nav>
+                <ul class="f_clear">
+                    <li><a href="#" class="selected">외인 순매수</a></li>
+                    <li><a href="#">외인 순매도</a></li>
+                </ul>
+            </nav>
+            <div class="contW02">
+                <div class="myStkB">
+                    <table class="bt0">
+                        <colgroup>
+                            <col width="30%" />
+                            <col width="20%" />
+                            <col width="30%" />
+                            <col width="20%" />
+                        </colgroup>
+                        <thead>
+                            <tr class="titW">
+                                <th colspan="2" class="lAlign">코스피</th>
+                                <th colspan="2" class="lAlign">코스닥</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="lAlign"><a href="#" class="stkName">현대차</a></td>
+                                <td><em class="down">-29.99%</em></td>
+                                <td class="lAlign"><a href="#" class="stkName">일이삼사오육칠팔구십</a></td>
+                                <td><em class="down">-2.99%</em></td>
+                            </tr>
+                            <tr>
+                                <td class="lAlign"><a href="#" class="stkName">12345678901234567890</a></td>
+                                <td><em class="up">+29.99%</em></td>
+                                <td class="lAlign"><a href="#" class="stkName">현대차</a></td>
+                                <td><em class="up">+9.19%</em></td>
+                            </tr>
+                            <tr>
+                                <td class="lAlign"><a href="#" class="stkName">현대차</a></td>
+                                <td><em class="draw">0.00%</em></td>
+                                <td class="lAlign"><a href="#" class="stkName">현대차</a></td>
+                                <td><em class="draw">0.00%</em></td>
+                            </tr>
+                            <tr>
+                                <td class="lAlign"><a href="#" class="stkName">현대차</a></td>
+                                <td><em class="down">-29.99%</em></td>
+                                <td class="lAlign"><a href="#" class="stkName">현대차</a></td>
+                                <td><em class="down">-29.99%</em></td>
+                            </tr>
+                            <tr>
+                                <td class="lAlign"><a href="#" class="stkName">현대차</a></td>
+                                <td><em class="down">-29.99%</em></td>
+                                <td class="lAlign"><a href="#" class="stkName">현대차</a></td>
+                                <td><em class="down">-29.99%</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="#" class="viewMore" title="더보기">더보기<em>&lt;</em></a>
+                </div>
+            </div>
+            <!-- 외인 순매수 끝 -->
+
+            <!-- 기관 순매수 시작 -->
+            <nav>
+                <ul class="f_clear">
+                    <li><a href="#" class="selected">기관 순매수</a></li>
+                    <li><a href="#">기관 순매도</a></li>
+                </ul>
+            </nav>
+            <div class="contW02">
+                <div class="myStkB">
+                    <table class="bt0">
+                        <colgroup>
+                            <col width="30%" />
+                            <col width="20%" />
+                            <col width="30%" />
+                            <col width="20%" />
+                        </colgroup>
+                        <thead>
+                            <tr class="titW">
+                                <th colspan="2" class="lAlign">코스피</th>
+                                <th colspan="2" class="lAlign">코스닥</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="lAlign"><a href="#" class="stkName">현대차</a></td>
+                                <td><em class="down">-29.99%</em></td>
+                                <td class="lAlign"><a href="#" class="stkName">일이삼사오육칠팔구십</a></td>
+                                <td><em class="down">-2.99%</em></td>
+                            </tr>
+                            <tr>
+                                <td class="lAlign"><a href="#" class="stkName">12345678901234567890</a></td>
+                                <td><em class="up">+29.99%</em></td>
+                                <td class="lAlign"><a href="#" class="stkName">현대차</a></td>
+                                <td><em class="up">+9.19%</em></td>
+                            </tr>
+                            <tr>
+                                <td class="lAlign"><a href="#" class="stkName">현대차</a></td>
+                                <td><em class="draw">0.00%</em></td>
+                                <td class="lAlign"><a href="#" class="stkName">현대차</a></td>
+                                <td><em class="draw">0.00%</em></td>
+                            </tr>
+                            <tr>
+                                <td class="lAlign"><a href="#" class="stkName">현대차</a></td>
+                                <td><em class="down">-29.99%</em></td>
+                                <td class="lAlign"><a href="#" class="stkName">현대차</a></td>
+                                <td><em class="down">-29.99%</em></td>
+                            </tr>
+                            <tr>
+                                <td class="lAlign"><a href="#" class="stkName">현대차</a></td>
+                                <td><em class="down">-29.99%</em></td>
+                                <td class="lAlign"><a href="#" class="stkName">현대차</a></td>
+                                <td><em class="down">-29.99%</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="#" class="viewMore" title="더보기">더보기<em>&lt;</em></a>
+                </div>
+            </div>
+            <!-- 기관 순매수 끝 -->
+
+            <!-- 시가총액 시작 -->
+            <div class="contW01 pb0">
+                <div class="titleB">
+                    <a href="#"><h4>시가총액</h4><span class="viewMore" title="더보기">더보기</span></a>
+                </div>
+                <div class="myStkB">
+                    <table>
+                        <colgroup>
+                            <col width="30%" />
+                            <col width="20%" />
+                            <col width="30%" />
+                            <col width="20%" />
+                        </colgroup>
+                        <thead>
+                            <tr class="titW">
+                                <th colspan="2" class="lAlign">코스피</th>
+                                <th colspan="2" class="lAlign">코스닥</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="lAlign"><a href="#" class="stkName">현대차</a></td>
+                                <td><em class="down">-29.99%</em></td>
+                                <td class="lAlign"><a href="#" class="stkName">일이삼사오육칠팔구십</a></td>
+                                <td><em class="down">-2.99%</em></td>
+                            </tr>
+                            <tr>
+                                <td class="lAlign"><a href="#" class="stkName">12345678901234567890</a></td>
+                                <td><em class="up">+29.99%</em></td>
+                                <td class="lAlign"><a href="#" class="stkName">현대차</a></td>
+                                <td><em class="up">+9.19%</em></td>
+                            </tr>
+                            <tr>
+                                <td class="lAlign"><a href="#" class="stkName">현대차</a></td>
+                                <td><em class="draw">0.00%</em></td>
+                                <td class="lAlign"><a href="#" class="stkName">현대차</a></td>
+                                <td><em class="draw">0.00%</em></td>
+                            </tr>
+                            <tr>
+                                <td class="lAlign"><a href="#" class="stkName">현대차</a></td>
+                                <td><em class="down">-29.99%</em></td>
+                                <td class="lAlign"><a href="#" class="stkName">현대차</a></td>
+                                <td><em class="down">-29.99%</em></td>
+                            </tr>
+                            <tr>
+                                <td class="lAlign"><a href="#" class="stkName">현대차</a></td>
+                                <td><em class="down">-29.99%</em></td>
+                                <td class="lAlign"><a href="#" class="stkName">현대차</a></td>
+                                <td><em class="down">-29.99%</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- 시가총액 끝 -->
+
+            <!-- 거래량 시작 -->
+            <div class="contW01 pb0">
+                <div class="titleB">
+                    <a href="#"><h4>거래량</h4><span class="viewMore" title="더보기">더보기</span></a>
+                </div>
+                <div class="myStkB">
+                    <table>
+                        <colgroup>
+                            <col width="30%" />
+                            <col width="20%" />
+                            <col width="30%" />
+                            <col width="20%" />
+                        </colgroup>
+                        <thead>
+                            <tr class="titW">
+                                <th colspan="2" class="lAlign">코스피</th>
+                                <th colspan="2" class="lAlign">코스닥</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="lAlign"><a href="#" class="stkName">현대차</a></td>
+                                <td><em class="down">-29.99%</em></td>
+                                <td class="lAlign"><a href="#" class="stkName">일이삼사오육칠팔구십</a></td>
+                                <td><em class="down">-2.99%</em></td>
+                            </tr>
+                            <tr>
+                                <td class="lAlign"><a href="#" class="stkName">12345678901234567890</a></td>
+                                <td><em class="up">+29.99%</em></td>
+                                <td class="lAlign"><a href="#" class="stkName">현대차</a></td>
+                                <td><em class="up">+9.19%</em></td>
+                            </tr>
+                            <tr>
+                                <td class="lAlign"><a href="#" class="stkName">현대차</a></td>
+                                <td><em class="draw">0.00%</em></td>
+                                <td class="lAlign"><a href="#" class="stkName">현대차</a></td>
+                                <td><em class="draw">0.00%</em></td>
+                            </tr>
+                            <tr>
+                                <td class="lAlign"><a href="#" class="stkName">현대차</a></td>
+                                <td><em class="down">-29.99%</em></td>
+                                <td class="lAlign"><a href="#" class="stkName">현대차</a></td>
+                                <td><em class="down">-29.99%</em></td>
+                            </tr>
+                            <tr>
+                                <td class="lAlign"><a href="#" class="stkName">현대차</a></td>
+                                <td><em class="down">-29.99%</em></td>
+                                <td class="lAlign"><a href="#" class="stkName">현대차</a></td>
+                                <td><em class="down">-29.99%</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- 거래량 끝 -->
+
+            <!-- 업종 시작 -->
+            <div class="contW01">
+                <div class="titleB">
+                    <a href="#"><h4>업종(WICS)</h4><span class="viewMore" title="더보기">더보기</span></a>
+                </div>
+                <div class="dayIncW">
+                    <table>
+                        <colgroup>
+                            <col width="*" />
+                            <col width="30%" />
+                            <col width="30%" />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>업종별</th>
+                                <th>등락률</th>
+                                <th>주도종목</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="lAlign"><a href="#" class="stkName">섬유의복</a></td>
+                                <td class="rAlign"><em class="up">+20.00%</em></td>
+                                <td class="last"><a href="#" class="stkName">삼성바이오로직스</a></td>
+                            </tr>
+                            <tr>
+                                <td class="lAlign"><a href="#" class="stkName">디지털컨텐츠</a></td>
+                                <td class="rAlign"><em class="down">-10.30%</em></td>
+                                <td class="last"><a href="#" class="stkName">더블유게임즈</a></td>
+                            </tr>
+                            <tr>
+                                <td class="lAlign"><a href="#" class="stkName">전기가스업</a></td>
+                                <td class="rAlign"><em class="down">-2.04%</em></td>
+                                <td class="last"><a href="#" class="stkName">경남에너지</a></td>
+                            </tr>
+                            <tr>
+                                <td class="lAlign"><a href="#" class="stkName">비금속광물</a></td>
+                                <td class="rAlign"><em class="up">+19.00%</em></td>
+                                <td class="last"><a href="#" class="stkName">성신양회우</a></td>
+                            </tr>
+                            <tr>
+                                <td class="lAlign"><a href="#" class="stkName">반도체</a></td>
+                                <td class="rAlign"><em class="down">-10.23%</em></td>
+                                <td class="last"><a href="#" class="stkName">SK하이닉스</a></td>
+                            </tr>
+                            <tr>
+                                <td class="lAlign"><a href="#" class="stkName">섬유의복</a></td>
+                                <td class="rAlign"><em class="up">+20.00%</em></td>
+                                <td class="last"><a href="#" class="stkName">삼성바이오로직스</a></td>
+                            </tr>
+                            <tr>
+                                <td class="lAlign"><a href="#" class="stkName">디지털컨텐츠</a></td>
+                                <td class="rAlign"><em class="down">-10.30%</em></td>
+                                <td class="last"><a href="#" class="stkName">더블유게임즈</a></td>
+                            </tr>
+                            <tr>
+                                <td class="lAlign"><a href="#" class="stkName">전기가스업</a></td>
+                                <td class="rAlign"><em class="down">-2.04%</em></td>
+                                <td class="last"><a href="#" class="stkName">경남에너지</a></td>
+                            </tr>
+                            <tr>
+                                <td class="lAlign"><a href="#" class="stkName">비금속광물</a></td>
+                                <td class="rAlign"><em class="up">+19.00%</em></td>
+                                <td class="last"><a href="#" class="stkName">성신양회우</a></td>
+                            </tr>
+                            <tr>
+                                <td class="lAlign"><a href="#" class="stkName">반도체</a></td>
+                                <td class="rAlign"><em class="down">-10.23%</em></td>
+                                <td class="last"><a href="#" class="stkName">SK하이닉스</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- 업종 끝 -->
+
+        </article>
+    </main>
+
+    <!-- 푸터 시작 -->
+    <footer>
+        <div class="fWrap">
+            <div class="btnB">
+                <a href="#" title="로그인">로그인</a>
+                <a href="#" title="APP보기">APP보기</a>
+                <a href="#" title="의견보내기">의견보내기</a>
+            </div>
+            <p>
+                카카오와 두나무가 제공하는 금융정보는 단순히 정보의 제공을<br>
+                목적으로 하고 있으며, 제공되는 정보는 오류 및 지연이 발생할 수 있습니다.<br>
+                정보제공자, 카카오, 두나무는 이용자의 투자결과에 따른 법적인 책임을<br>
+                지지 않습니다. 게시된 정보는 무단으로 배포할 수 없습니다.<br>
+            </p>
+            <div class="txtCenter">
+                <a href="#">&copy; 두나무 주식회사</a><span class="bar">|</span><a href="#">고객지원</a><span class="bar">|</span><a href="#">공지사항</a>
+            </div>
+        </div>
+    </footer>
+    <!-- 푸터 끝 -->
+
+</body>
+</html>

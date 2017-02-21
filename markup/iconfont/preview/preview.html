@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>iconfont</title>
+    <style>
+
+      body { 
+        font-family: monospace;
+        background: #1d1f21;
+        margin: 0;
+        padding: 15px;
+        font-size: 2em;
+      }
+
+      h1 { 
+        color: #666; 
+        text-transform: capitalize;
+        margin: 0.5em 0 1em 0;
+      }
+
+      .glyph-max-width {
+        max-width: 1024px;
+        margin: 0 auto;
+      }
+
+      .glyph { 
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+      }
+      .glyph li {
+        -webkit-column-break-inside: avoid;
+        page-break-inside: avoid;
+        break-inside: avoid;
+        margin-bottom: 15px;
+      }
+
+      .glyph-ellipsis {
+        display: inline-block;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: white;
+      }
+
+      .glyph-icon {
+        color: #dfc47e;
+      }
+
+      .glyph-class {
+        color: #9b869c;
+      }
+      .glyph-class:before {
+        content: ".";
+      }
+
+      .glyph-codepoint { 
+        font-size: 0.5em;
+        color: #cd6a51;
+      }
+      .glyph-codepoint:before {
+        content: "[";
+      }
+      .glyph-codepoint:after {
+        content: "]";
+      }
+
+      @font-face {
+        font-family: 'iconfont';
+        src: url('font/iconfont.eot?h=9fd40205e040a3db8be162a841efec60');
+        src: url('font/iconfont.eot?h=9fd40205e040a3db8be162a841efec60#iefix') format('eot'),
+          url('font/iconfont.woff?h=9fd40205e040a3db8be162a841efec60') format('woff'),
+          url('font/iconfont.ttf?h=9fd40205e040a3db8be162a841efec60') format('truetype'),
+          url('font/iconfont.svg?h=9fd40205e040a3db8be162a841efec60#iconfont') format('svg');
+      }
+
+      .iconfont {
+        display: inline-block;
+        font-family: 'iconfont';
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      .iconfont:before {
+        display: inline-block;
+        font-family: 'iconfont';
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      /**
+       * Required for 'iconfont.htc'
+       */
+      .iconfont.hide-pseudo-element:before {
+        display: none;
+        content: '';
+      }
+
+      
+      /**
+       * IE8 : Polyfill using behavior
+       */
+      .iconfont-designer {
+        behavior: url(font/iconfont.htc);
+        icon: 'E001';
+      }
+      .iconfont-designer:before {
+        content: '\E001';
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="glyph-max-width">
+      <h1>iconfont</h1>
+      <ul class="glyph">
+        <li>
+          <span class="glyph-ellipsis">
+            <span class="glyph-icon"><i class="iconfont iconfont-designer"></i></span>
+            <span class="glyph-class">iconfont-designer</span>
+            <span class="glyph-codepoint">E001</span>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

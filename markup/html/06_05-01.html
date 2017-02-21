@@ -1,0 +1,383 @@
+<!--#include file="../_inc/_doctype.html"-->
+<head>
+    <!--#include file="../_inc/_page-title.html"-->
+    <!--#include file="../_inc/_meta-information.html"-->
+    <!--#include file="../_inc/_meta-settings.html"-->
+    <!--#include file="../_inc/_css-settings-before.html"-->
+</head>
+<body>
+    <header>
+        <div class="topDef">
+            <h3><a href="#">삼성전자</a></h3>
+            <span class="btnB">
+                <a href="http://m.naver.com" class="btnHome">HOME</a>
+                <a href="#" class="btnSearch" title="검색">Search</a>
+                <a href="#" class="btnMy" title="마이페이지">My</a>
+            </span>
+        </div>
+        <div class="stockInfoB">
+            <!--  종목 정보 시작 -->
+            <ul>
+                <li>
+                    <div class="stkB">
+                        <span class="stkN"><strong>1,289,000</strong><em class="up">12,000&nbsp; 0.23<i>%</i></em></span>
+                        <span class="chartImg" style="background-color:red;"></span>
+                        <span class="stkM"><i>코스피 035720</i><cite>|</cite><i>투자주의</i><cite>|</cite><i>변동성완화</i><cite>|</cite><i>10.26 실시간</i></span>
+                    </div>
+                    <a href="#" class="addFav selected" title="관심종목 추가">관심종목 추가</a>
+                </li>
+            </ul>
+            <a href="#" class="btnPrev" title="이전">이전</a>
+            <a href="#" class="btnNext" title="다음">다음</a>
+            <!--  종목 정보 끝 -->
+        </div>
+        <!-- 주문하기 기능 -->
+        <div class="order-area">
+            <!-- 주문하기 -->
+            <div class="order">
+                <div class="order-inner">
+                    <h2>카카오증권 앱으로 주문하기<span class="icoQuest">?</span></h2>
+                    <button>주문</button>
+                </div>
+            </div>
+            <!-- //주문하기 -->
+        </div>
+        <!-- 주문하기 기능 -->
+        <nav class="ty01">
+            <ul class="f_clear">
+                <li><a href="#" title="종합">종합</a></li>
+                <li><a href="#" title="토론">토론</a></li>
+                <li class="long"><a href="#" title="뉴스/공시">뉴스/공시</a></li>
+                <li><a href="#" title="시세">시세</a></li>
+                <li><a href="#" class="selected" title="분석">분석</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="stockInfoW">
+            <!-- 매출액 성장률 시작 -->
+            <div class="contW02">
+                <div class="titleB">
+                    <h4 class="ty01">매출액 성장률<a href="#" class="icoQuest">도움말</a></h4>
+                    <!-- <div class="layerB">
+                        <span class="spanB">
+                            <strong>PER</strong>
+                            <em>전일 보통주 수정주가 ÷ 최근 결산 주당순이익(EPS)</em>
+                        </span>
+                        <a href="#" class="btnClose" title="닫기">닫기</a>
+                    </div> -->
+                    <em class="date">업종 : 인터넷 소프트웨어와 서비스</em>
+                </div>
+                <div class="udGraphB">
+                    <a href="#" class="btn prev" title="이전">이전</a>
+                    <ul class="graphList f_clear">
+                        <li>
+                            <div class="updown">
+                                <!-- <div class="stand">
+                                    <em class="title">삼성전자</em>
+                                    <span class="percent"><strong>-</strong></span>
+                                    <span class="dataNone">데이터없음</span>
+                                </div> -->
+                                <div class="up">
+                                    <em class="title">삼성전자</em>
+                                    <span class="percent"><strong>12.1</strong><em>%</em></span>
+                                </div>
+                                <div class="graph">
+                                    <span class="ty04"><!-- ty01 ty02 ty03 ty04로 class명 변경 해주시면 됩니다.-->
+                                        <!-- ty01, ty02의 em height값의 최대는 100% ty03, ty04의 em height값의 최대는 50%로 해주세요. -->
+                                        <em class="defaultL" style="height:30%;">30%</em>
+                                        <em class="defaultR" style="height:50%;">50%</em>
+                                    </span>
+                                </div>
+                                <div class="stand">
+                                    <em class="title">업종 평균</em>
+                                    <span class="percent"><strong>10.2</strong><em>%</em></span>
+                                </div>
+                                <div class="txtB">
+                                    <p>(최근 3년 평균)</p>
+                                    <p>최근 3년간 성장했으나, 업종 평균에 미치지 못합니다.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li style="display:none;">
+                            <div class="updown">
+                                <div class="down">
+                                    <em class="title">삼성전자</em>
+                                    <span class="percent"><strong>-12.1</strong><em>%</em></span>
+                                </div>
+                                <div class="graph txt">
+                                    <span class="ty02"><!-- ty01 ty02 ty03 ty04로 class명 변경 해주시면 됩니다.-->
+                                        <!-- ty01, ty02의 em height값의 최대는 100% ty03, ty04의 em height값의 최대는 50%로 해주세요. -->
+                                        <!-- 매출액성장률, 영업이익률에는 graph 클래스 옆에 txt 클래스 추가해 주세요. -->
+                                        <em class="down" style="height:100%;">100%</em>
+                                        <em class="default" style="height:50%;">50%</em>
+                                    </span>
+                                    <span class="txt">(직전 년도)</span>
+                                </div>
+                                <div class="stand">
+                                    <em class="title">업종 평균</em>
+                                    <span class="percent"><strong>10.2</strong><em>%</em></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li style="display:none;">
+                            <div class="updown">
+                                <div class="down">
+                                    <em class="title">삼성전자</em>
+                                    <span class="percent"><strong>-12.1</strong><em>%</em></span>
+                                </div>
+                                <div class="graph">
+                                    <span class="ty03"><!-- ty01 ty02 ty03 ty04로 class명 변경 해주시면 됩니다.-->
+                                        <!-- ty01, ty02의 em height값의 최대는 100% ty03, ty04의 em height값의 최대는 50%로 해주세요. -->
+                                        <em class="down" style="height:30%;">30%</em>
+                                        <em class="default" style="height:50%;">50%</em>
+                                    </span>
+                                </div>
+                                <div class="stand">
+                                    <em class="title">기준 금리</em>
+                                    <span class="percent"><strong>10.2</strong><em>%</em></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li style="display:none;">
+                            <div class="updown">
+                                <div class="up">
+                                    <em class="title">삼성전자</em>
+                                    <span class="percent"><strong>2.1</strong><em>배</em></span>
+                                </div>
+                                <div class="graph">
+                                    <span class="ty01"><!-- ty01 ty02 ty03 ty04로 class명 변경 해주시면 됩니다.-->
+                                        <!-- ty01, ty02의 em height값의 최대는 100% ty03, ty04의 em height값의 최대는 50%로 해주세요. -->
+                                        <em class="up" style="height:80%;">2.1배</em>
+                                        <em class="default" style="height:40%;">1.2배</em>
+                                    </span>
+                                </div>
+                                <div class="stand">
+                                    <em class="title">업종 평균</em>
+                                    <span class="percent"><strong>1.2</strong><em>배</em></span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn next" title="다음">다음</a>
+                </div>
+            </div>
+            <!-- 매출액 성장률 끝 -->
+            <!-- 동일 업종 종목 시작 -->
+            <div class="slideW">
+                <div class="titleB f_clear">
+                    <h4 class="ty01"><strong>동일 업종 종목</strong></h4></div>
+                <div class="slideB">
+                    <div class="overB">
+                        <ul class="f_clear">
+                            <li>
+                                <a href="#">
+                                    <span class="spanB">
+                                        <strong>현대차</strong>
+                                        <em>160,800</em>
+                                        <i class="up">112,000&nbsp; 99.99%</i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="spanB">
+                                        <strong>아모레퍼시픽</strong>
+                                        <em>1,372,500</em>
+                                        <i class="down">-300&nbsp; -23.99%</i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="spanB">
+                                        <strong>아모레퍼시픽</strong>
+                                        <em>1,372,500</em>
+                                        <i class="down">12,000&nbsp; -23.99%</i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 동일 업종 종목 끝 -->
+            <!-- 기업개요 시작 -->
+            <div class="contW01 pb0">
+                <div class="titleB">
+                    <h4>기업 개요</h4></div>
+                <div class="financeTxt">
+                    <p>동사는 2002년 4월 1일을 기준일로 분할 전 LG전자(주)의 전자 및 정보통신사업부문을 인적 분할하여 설립한 LG계열 기업집단 소속 회사이고, LG전자의 연결대상 종속기업은 139개사임.</p>
+                    <p>HE 사업의 경우 선진시장의 프리미엄 제품 수요 증가 및 성장 시장의 Digital TV 보급 확대 등으로 기회요인스마트폰 Full Line-up 및 UX/Contents Service 차별화, 특화 제품 강화 등의 Product Leadership을 지속 확대할 계획임</p>
+                    <p><em>제공 : 와이즈리포트</em></p>
+                </div>
+            </div>
+            <!-- 기업개요 끝 -->
+            <!-- 투자자별 매매동향 시작 -->
+            <div class="contW01 pb0">
+                <div class="titleB bb1">
+                    <h4 class="ty01">재무재표</h4>
+                    <ul class="navW">
+                        <li><a href="#" class="selected">분기</a></li>
+                        <li><a href="#">연간</a></li>
+                    </ul>
+                </div>
+                <div class="marketPriceW">
+                    <table class="type02 first">
+                        <thead>
+                            <tr>
+                                <th class="period">기간</th>
+                            </tr>
+                            <tr>
+                                <th>매출액</th>
+                            </tr>
+                            <tr>
+                                <th>영업이익</th>
+                            </tr>
+                            <tr>
+                                <th>당기순이익</th>
+                            </tr>
+                            <tr>
+                                <th>영업이익률</th>
+                            </tr>
+                            <tr>
+                                <th>순이익률</th>
+                            </tr>
+                            <tr>
+                                <th>PER</th>
+                            </tr>
+                            <tr>
+                                <th>PBR</th>
+                            </tr>
+                            <tr>
+                                <th>ROE</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <div class="slideB">
+                        <div class="overB">
+                            <table class="type02" style="width:360px;">
+                                <colgroup>
+                                    <col width="100" />
+                                    <col width="100" />
+                                    <col width="100" />
+                                    <col width="100" />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>15년 3월
+                                            <br><em class="ifrs">IFRS연결</em></th>
+                                        <th>15년 6월
+                                            <br><em class="ifrs">IFRS개별</em></th>
+                                        <th>15년 9월<em class="icoEst">E</em>
+                                            <br><em class="ifrs">IFRS연결</em></th>
+                                        <th>15년 9월<em class="icoEst">E</em>
+                                            <br><em class="ifrs">IFRS연결</em></th>
+                                    </tr>
+                                    <tr>
+                                        <td>262,059</td>
+                                        <td>22,059</td>
+                                        <td>2,062,059</td>
+                                        <td>2,062,059</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2,062,059</td>
+                                        <td>2,062,059</td>
+                                        <td>2,062,059</td>
+                                        <td>2,062,059</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2,062,059</td>
+                                        <td>2,062,059</td>
+                                        <td>2,062,059</td>
+                                        <td>2,062,059</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2,062,059</td>
+                                        <td>2,062,059</td>
+                                        <td>2,062,059</td>
+                                        <td>2,062,059</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2,062,059</td>
+                                        <td>2,062,059</td>
+                                        <td>2,062,059</td>
+                                        <td>2,062,059</td>
+                                    </tr>
+                                    <tr>
+                                        <td>262,059</td>
+                                        <td>22,059</td>
+                                        <td>22,059</td>
+                                        <td>2,062,059</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2,062,059</td>
+                                        <td>2,062,059</td>
+                                        <td>2,062,059</td>
+                                        <td>2,062,059</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2,062,059</td>
+                                        <td>2,062,059</td>
+                                        <td>2,062,059</td>
+                                        <td>2,062,059</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <p class="caption">
+                        <span class="spanB"><em>※</em><i>단위</i>: 억원, %, 배</span>
+                        <span class="spanB"><em>※</em><i><em class="icoEst">E</em></i>: 최근 3개월간 증권사에서 발표한 전망치의 평균값</span>
+                    </p>
+                </div>
+            </div>
+            <!-- 투자자별 매매동향 끝 -->
+            <!-- 컨센서스 시작 -->
+            <div class="contW01 pb0">
+                <div class="titleB">
+                    <h4 class="ty01">증권사 컨센서스</h4>
+                    <em class="date">01.30 13:30 기준</em>
+                </div>
+                <div class="consensusB">
+                    <div class="f_clear">
+                        <span class="txt">목표주가<em>1,500,000</em></span>
+                        <i>매수 3.54</i>
+                    </div>
+                    <div class="consensus">
+                        <span class="selected" style="left:100%">▼</span>
+                        <ul>
+                            <li class="ty01">강력매도</li>
+                            <li class="ty02">매도</li>
+                            <li class="ty03">보합</li>
+                            <li class="ty04">매수</li>
+                            <li class="ty05 selected">강력매수</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 컨센서스 끝 -->
+            <!-- 주가예측 시작 -->
+            <div class="contW01 pb0 bb1">
+                <div class="titleB">
+                    <h4 class="ty01">주가예측</h4>
+                    <em class="date">01.30 13:30 기준</em>
+                </div>
+                <div class="opinionB">
+                    <span class="up">
+                        <div class="upW">오른다</div>
+                        <em>76</em><i>%</i>
+                    </span>
+                    <cite>VS</cite>
+                    <span class="down">
+                        <em>24</em><i>%</i>
+                        <div class="downW">내린다</div>
+                    </span>
+                </div>
+            </div>
+            <!-- 주가예측 끝 -->
+        </article>
+    </main>
+    <a href="#" class="btnPrice" title="실시간 호가">실시간 호가</a>
+</body>
+</html>

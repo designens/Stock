@@ -1,0 +1,6 @@
+.lt-ie9 .errorW {
+	h1 {
+		background: none !important;
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{url($title_kakao)}',sizingMethod='scale');
+	}
+}

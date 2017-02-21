@@ -1,0 +1,61 @@
+// =======================================
+// Fonts Style Settings
+// =======================================
+
+// 시스템폰트 설정
+$font-family: Helvetica, "Helvetica Neue", AppleSDGothicNeo, sans-serif;
+
+// 타이포그라피 기본 설정
+$html-fz: 10px;
+$body-fz: 30px;
+$line-height: 1.6;
+
+// 단위 제거
+@function de-unit($unit) {
+	@return $unit / ($unit * 0 + 1);
+}
+
+// Px => Rem 단위 변경
+@function rem ($unit, $base: $html-fz) {
+	@return de-unit($unit) / de-unit($base) + rem;
+}
+
+// Retina Design Size 설정
+// $px-ratio: 2(기본값) => 1/2 사이즈로 변환
+@function retina ($unit, $px-ratio: 2) {
+	@return round($unit/$px-ratio);
+}
+
+// 폰트 사이즈 설정 (font-size)
+@mixin psd-fz ($fz) {
+	$retina-fz: retina($fz);
+	font-size: rem($retina-fz);
+	font-size: $retina-fz;
+}
+
+// 행간 설정 (line-height)
+@mixin psd-lh ($lh) {
+	$retina-lh: retina($lh) * $line-height;
+	line-height: rem($retina-lh);
+	line-height: $retina-lh;
+}
+
+// 행간 간격 설정
+@mixin mb-size ($psd-fz, $position: bottom) {
+	$fz: retina($psd-fz);
+	$lh: $fz * $line-height;
+	$round-px: round( de-unit($lh) ) * 1px;
+  margin-#{$position}: rem($round-px);
+	margin-#{$position}: $round-px;
+}
+
+// Heading Font Size & Line-height 설정
+@mixin hd-font ($psd-fz, $line-num: 1) {
+	$fz: retina($psd-fz);
+	$lh: (retina($body-fz) * $line-height) * $line-num;
+	$round-px: round( de-unit($lh) ) * 1px;
+	font-size: rem($fz);
+	font-size: $fz;
+	line-height: rem($round-px);
+	line-height: $round-px;
+}

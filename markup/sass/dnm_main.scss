@@ -1,0 +1,147 @@
+/*! dunamu_main.css v1.0.0 © https://gitlab.dev.dunamu.com/publishing/stock */
+
+@charset "utf-8";
+
+// =======================================
+// Framework import
+// =======================================
+@import "../../node_modules/susy/sass/susy";
+
+// =======================================
+// Base Design
+// =======================================
+@import "base/reset";
+@import "base/susy-settings";
+@import "base/color-system";
+@import "base/background";
+
+// =======================================
+// Fonts
+// =======================================
+@import "fonts/system-fonts";
+@import "fonts/typography";
+
+// =======================================
+// Conmmon Main guide
+// =======================================
+
+.wrap {
+	@include container;
+	@include psd-fz(30px);
+	@include psd-lh(30px);
+	padding: 0 2.4rem;
+	article {
+		.stock-all-title {
+			&:before {
+				content: "\f013";
+				font-family: FontAwesome;
+				font-size: 1.3rem;
+				color: #fb5324;
+				padding-right: 0.5rem;
+			}
+		}
+	}
+	.typography {
+		@include span(full);
+		margin-top: $base-line-height;
+		.h6 {
+			margin-bottom: 2.2rem;
+		}
+		.text {
+			padding: 2.3rem $base-line-height;
+			border: 1px solid #ddd;
+			background: #fff;
+			p {
+				margin-bottom: $base-line-height;
+			}
+		}
+	}
+	.stock-all-link {
+		@include span(full);
+		margin-top: $base-line-height;
+		.h6 {
+			margin-bottom: 2.2rem;
+		}
+		.location {
+			padding: 2.3rem $base-line-height;
+			border: 1px solid #ddd;
+			margin-bottom: $base-line-height;
+			background: #fff;
+			p {
+				height: 2.4rem;
+				&:before {
+					content: "\f0c1";
+					font-family: FontAwesome;
+					font-size: 1rem;
+					color: #ccc;
+					padding-right: 0.5rem;
+				}
+				a {
+					color: #333;
+				}
+				span {
+					font-size: 1.2rem;
+					color: #aaa;
+					&:before {
+						content: "(";
+					}
+					&:after {
+						content: ")";
+					}
+				}
+			}
+		}
+	}
+	.stock-all-images {
+		margin: $base-line-height 0;
+		clear: both;
+		overflow: hidden;
+		.h6 {
+			@include span(full);
+			margin-bottom: 2.2rem;
+		}
+		.img-box {
+			height: auto;
+			padding: $base-line-height;
+			border: 1px solid #ddd;
+			margin-bottom: 10px;
+			background: #fff;
+			@include span(full);
+			@include susy-breakpoint($mobile) {
+				@include layout(6 (152px 12px) after);
+				&:nth-of-type(1) {
+					@include span(3);
+				}
+				&:nth-of-type(2) {
+					@include span(3 last);
+				}
+				&:nth-of-type(3) {
+					@include span(full);
+				}
+			}
+			@include susy-breakpoint($tablet) {
+				@include layout(6 (218px 12px) after);
+				&:nth-of-type(1) {
+					@include span(2);
+				}
+				&:nth-of-type(2) {
+					@include span(2);
+				}
+				&:nth-of-type(3) {
+					@include span(2 last);
+				}
+			}
+			h6.h6 {
+				padding: 1rem;
+				color: #fff;
+				background: #333;
+				box-sizing: border-box;
+			}
+			img {
+				max-width: 100%;
+				height: auto;
+				margin-top: 1rem;
+			}
+		}
+	}
+}

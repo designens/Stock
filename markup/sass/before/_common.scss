@@ -1,0 +1,140 @@
+// =======================================
+// Common type
+// =======================================
+@mixin paginate-mixin {
+	display: block;
+	text-align: center;
+	em {
+		display: inline-block;
+		width: 14px;
+		height: 10px;
+		margin: 0;
+		background: url($ico_set01) -40px -300px no-repeat;
+		overflow: hidden;
+		text-indent: -100em;
+		background-size: 200px;
+
+		&.selected {
+			background-position: -20px -300px;
+		}
+	}
+}
+
+@mixin up-down-mixin {
+	em {
+		&.up {
+			padding-left: 14px;
+			background: url($ico_updown) 0 1px no-repeat;
+			background-size: 10px;
+			line-height: 1em;
+		}
+
+		&.down {
+			padding-left: 14px;
+			background: url($ico_updown) 0 -19px no-repeat;
+			background-size: 10px;
+			line-height: 1em;
+		}
+
+		&.up1 {
+			padding-left: 14px;
+			background: url($ico_updown) 0 -39px no-repeat;
+			background-size: 10px;
+			line-height: 1em;
+		}
+
+		&.down1 {
+			padding-left: 14px;
+			background: url($ico_updown) 0 -59px no-repeat;
+			background-size: 10px;
+			line-height: 1em;
+		}
+
+		&.draw {
+			padding-left: 14px;
+			background: url($ico_updown) 0 -79px no-repeat;
+			background-size: 10px;
+			line-height: 1em;
+		}
+	}
+}
+.lt-ie8 .clearfix {
+	zoom: 1;
+}
+.f_clear:after {
+	content: "";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+* html .f_clear {
+	height: 1px;
+}
+.f_clear {
+	display: block;
+	min-height: 1px;
+}
+.clr {
+	clear: both;
+	width: 0;
+	padding: 0;
+	font: 0/0 Arial;
+}
+.fl {
+	float: left !important;
+}
+.fr {
+	float: right !important;
+}
+.hide {
+	display: none;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	overflow: hidden;
+	visibility: hidden;
+	line-height: 0;
+	padding: 0;
+	margin: 0;
+}
+.mt0 {
+	margin-top: 0 !important;
+}
+.bt0 {
+	border-top: 0 !important;
+}
+.bb0 {
+	border-bottom: 0 !important;
+}
+.pt0 {
+	padding-top: 0 !important;
+}
+.pb0 {
+	padding-bottom: 0 !important;
+}
+.up, .up1 {
+	color: #e62300 !important;
+}
+.down, .down1 {
+	color: #0077f0 !important;
+}
+.draw {
+	color: #222222 !important;
+}
+.bb1 {
+	border-bottom: 1px solid #e3e3e3;
+}
+.bgWhite {
+	background-color: #ffffff;
+
+	.recentSrch {
+		border-bottom: 8px solid #ededed;
+	}
+	.bt1 {
+		border-top: 1px solid #e3e3e3;
+	}
+	.bt8 {
+		border-top: 8px solid #ededed;
+	}
+}
